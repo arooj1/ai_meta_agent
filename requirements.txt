@@ -19,3 +19,6 @@ typing_extensions==4.13.2
 urllib3==2.4.0
 fastapi
 uvicorn
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
