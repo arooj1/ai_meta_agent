@@ -28,14 +28,3 @@ def run_task(user_id, user_query, users_db):
             memory.update(k, v)
 
     return memory.dump()
-
-if __name__ == "__main__":
-    users_db = {
-        "user123": {
-            "name": "Arooj",
-            "role": "student",
-            "capabilities": ["summarizer", "deadline_extractor"]
-        }
-    }
-    result = run_task("user123", "Summarize and extract deadlines", users_db)
-    print(result)
